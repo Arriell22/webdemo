@@ -5,6 +5,19 @@ GENERAL STYLING==============*/
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
   margin: 0;
   font-family: arial, san-serif;
@@ -22,6 +35,7 @@ main {
 
 .nav-bar {
   display: flex;
+ 
   align-items: center;
   justify-content: space-between;
   padding: 20px 60px;
@@ -33,8 +47,14 @@ main {
   font-size: 24px;
 }
 
+
+
+
+
+
 .nav-bar ul {
   display: flex;
+  
   list-style: none;
   gap: 30px;
   margin: 0;
@@ -46,14 +66,19 @@ main {
 
 .nav-bar a {
   text-decoration: none;
-  color: #222;
+  color: #ffffff;
   font-size: 16px;
+  padding:10px 20px;
+  border-radius: 5px;
+ background-color: #393b55;
 
 }
 
 
 .nav-bar a:hover {
-  color: #121ca3;
+ background-color: #0d147a;
+ transition: transform 0.3s, background-color 0.3s ease;
+
 }
 
 
@@ -278,7 +303,7 @@ main {
 .footer-area {
     background-color: #121ca3;
     color: white;
-    padding: 30px 60px;
+    padding: 60px 60px;
     text-align: center;
 }
 
@@ -507,14 +532,6 @@ hero-section img {
     }
 
 }
-
-
-
-
-
-
-
-
 }
 
 
@@ -626,3 +643,216 @@ hero-section img {
     }
 
 }
+
+.about-hero {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:80px 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+
+}
+
+.about-img {
+    flex: 1;
+    text-align: center;
+}
+
+.about-img img {
+    width: 80%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+.mission-section,
+.vision-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 50px;
+    text-align: center;
+
+    border-radius: 15px;
+      border: 1px solid #e1e1e1;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.mission-section {
+    background-color: #dadce7;
+}
+
+.vision-section {
+    background-color: #dadce7;
+}
+
+
+
+.mission-section h2,
+.vision-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.mission-section p,
+.vision-section p {
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 15px;
+}
+
+/* ================= WHAT WE DO ================= */
+
+.what-i-do {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.what-i-do h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.services article {
+    flex: 1;
+
+    padding: 30px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e1e1e1;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.services article h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.services article p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.services article {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* Navigation */
+
+    .nav-bar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+.nav-bar ul {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+}
+
+
+
+
+    /* About Hero */
+
+    .about-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .about-text h1 {
+        font-size: 34px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .about-img img {
+        max-width: 350px;
+    }
+
+
+    /* Mission and Vision */
+
+    .mission-section,
+    .vision-section {
+        margin: 30px 20px;
+        padding: 35px 25px;
+    }
+
+
+    /* What We Do */
+
+    .what-i-do {
+        margin: 50px 20px;
+        padding: 20px;
+    }
+
+    .services {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .services article {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* Footer */
+
+    .footer-area {
+        padding: 25px 20px;
+    }
+
+
+
+}
+
+
